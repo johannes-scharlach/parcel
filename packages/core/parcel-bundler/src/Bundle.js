@@ -114,7 +114,7 @@ class Bundle {
     let hash = (contentHash
       ? this.getHash()
       : Path.basename(this.name, ext)
-    ).slice(-8);
+    ).slice(-12);
     let entryAsset = this.entryAsset || this.parentBundle.entryAsset;
     let name = Path.basename(entryAsset.name, Path.extname(entryAsset.name));
     let isMainEntry = entryAsset.options.entryFiles[0] === entryAsset.name;
